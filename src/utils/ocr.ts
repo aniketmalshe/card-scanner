@@ -1,4 +1,4 @@
-import { scanOCR } from 'vision-camera-ocr';
+import { scanOCR } from '@bear-block/vision-camera-ocr';
 import type { Frame } from 'react-native-vision-camera';
 
 export type CardData = {
