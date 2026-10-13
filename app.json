@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Card Scanner",
+    "slug": "card-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#1a1a2e"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nichem.cardscanner",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera is used to scan business cards.",
+        "NSContactsUsageDescription": "Contacts access is needed to save scanned business card details.",
+        "NSPhotoLibraryUsageDescription": "Photo library access is used to save card images."
+      }
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "Card Scanner uses your camera to scan business cards."
+        }
+      ],
+      "expo-contacts",
+      "expo-media-library",
+      [
+        "expo-router",
+        {
+          "origin": "https://card-scanner.nichem.solutions"
+        }
+      ]
+    ],
+    "scheme": "cardscanner",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
